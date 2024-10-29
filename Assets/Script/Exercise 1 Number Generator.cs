@@ -7,19 +7,21 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int num = 1;
-        while (num <= 20)
+
+        int counter = 0;
+        while (counter < 20)
         {
-            if (num == 5)
+            int randomnumber = Random.Range(1, 21);
+            if (randomnumber == 5)
             {
                 continue;
             }
-            else if (num == 15)
+            else if (randomnumber == 15)
             {
                 break;
             }
-            Debug.Log(num);
-            num++;
+            Debug.Log(randomnumber);
+            counter++;
         }
 
     }
